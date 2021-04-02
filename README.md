@@ -34,3 +34,9 @@
   ```
   enableSemantics('your domain');
   ```
+  
+  Then run the following code
+  
+  ```
+  php maintenance/update.php
+  ```
