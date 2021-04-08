@@ -19,3 +19,9 @@ RUN composer update --no-dev
 # install timeless skin
 RUN curl -o timeless-skin.tar.gz https://extdist.wmflabs.org/dist/skins/Timeless-REL1_35-c2b39e7.tar.gz
 RUN tar -xzf timeless-skin.tar.gz -C /var/www/html/skins
+RUN rm -rf timeless-skin.tar.gz
+
+# install visual editor
+RUN curl https://extdist.wmflabs.org/dist/extensions/VisualEditor-REL1_35-dc85118.tar.gz
+RUN tar -xzf VisualEditor-REL1_35-dc85118.tar.gz -C /var/www/html/extensions
+RUN rm -rf VisualEditor-REL1_35-dc85118.tar.gz

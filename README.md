@@ -1,4 +1,4 @@
-# Semantic MediaWiki With Timeless Skin
+# Semantic MediaWiki
 
 ## Installation
 
@@ -11,6 +11,8 @@
 - Setup MediaWiki via its web based GUI at http://localhost:8081
 
 - Download and copy the `LocalSettings.php` to your machine
+
+## Skin
 
 - Activate Timeless Skin
 
@@ -27,10 +29,14 @@
   $wgDefaultSkin = "Timeless";
   ```
 
-- Activate Semantic Wiki Extension
+## Extentions
 
+- Semantic Wiki
+  - Activate Semantic Wiki Extension
   In `LocalSettings.php` append
 
-  ```
-  enableSemantics('your domain');
-  ```
+    ```
+    enableSemantics('your domain');
+    ```
+
+- Visual Editor
