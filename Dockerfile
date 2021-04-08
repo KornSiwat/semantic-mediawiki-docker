@@ -22,6 +22,6 @@ RUN tar -xzf timeless-skin.tar.gz -C /var/www/html/skins
 RUN rm -rf timeless-skin.tar.gz
 
 # install visual editor
-RUN curl https://extdist.wmflabs.org/dist/extensions/VisualEditor-REL1_35-dc85118.tar.gz
-RUN tar -xzf VisualEditor-REL1_35-dc85118.tar.gz -C /var/www/html/extensions
-RUN rm -rf VisualEditor-REL1_35-dc85118.tar.gz
+RUN curl -o visual-editor.tar.gz https://extdist.wmflabs.org/dist/extensions/VisualEditor-REL1_35-dc85118.tar.gz
+RUN tar -xzf visual-editor.tar.gz -C /var/www/html/extensions
+RUN rm -rf visual-editor.tar.gz

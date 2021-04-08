@@ -32,11 +32,23 @@
 ## Extentions
 
 - Semantic Wiki
-  - Activate Semantic Wiki Extension
-  In `LocalSettings.php` append
 
-    ```
-    enableSemantics('your domain');
-    ```
+  - Activate Semantic Wiki Extension
+    In `LocalSettings.php` append
+
+  ```
+  enableSemantics('your domain');
+  ```
+
+  Then run the following code
+
+  ```
+  php maintenance/update.php
+  ```
 
 - Visual Editor
+  - Activate Visual Editor
+    In `LocalSettings.php` append
+  ```
+  wfLoadExtension( 'VisualEditor' );
+  ```
